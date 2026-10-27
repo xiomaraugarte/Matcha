@@ -27,7 +27,7 @@ export default function RootLayout() {
         headerTitleStyle: { fontFamily: fonts.h2 },
       }}
     >
-      <Stack.Screen name="index" options={{ headerShown: false }} />
+      <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
       <Stack.Screen
         name="product/[id]"
         options={{ headerStyle: { backgroundColor: colors.primary }, headerTintColor: colors.onPrimary }}

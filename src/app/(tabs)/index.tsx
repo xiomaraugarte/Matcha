@@ -1,10 +1,10 @@
-import { fonts } from '@/constants/fonts';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { Link } from 'expo-router';
 import { Image, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { colors } from '../constants/colors';
-import { products } from '../constants/products';
+import { colors } from '../../constants/colors';
+import { fonts } from '../../constants/fonts';
+import { products } from '../../constants/products';
 
 export default function Index() {
   return (
