@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Image, Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import { colors } from '../constants/colors';
 import { products } from '../constants/products';
+import { askNotificationPermission, scheduleOrderReady } from '../notifications/notifications';
 import { loadOrders, saveOrders } from '../storage/orders';
 
 export default function Order() {
@@ -56,6 +57,11 @@ export default function Order() {
             };
 
             await saveOrders([newOrder, ...orders]);
+
+            const allowed = await askNotificationPermission();
+            if (allowed) {
+                await scheduleOrderReady();
+            }
 
             router.push({
                 pathname: '/order-confirmed',
