@@ -2,6 +2,7 @@ import { fonts } from '@/constants/fonts';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { router, useLocalSearchParams } from 'expo-router';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
+import NotifyCard from '../components/NotifyCard';
 import { colors } from '../constants/colors';
 
 export default function OrderConfirmed() {
@@ -10,6 +11,7 @@ export default function OrderConfirmed() {
         <View style={styles.screen}>
             <Ionicons name="checkmark-circle" size={110} color={colors.primary} />
             <Text style={styles.title}>¡Pedido listo, {name}!.</Text>
+            <NotifyCard />
             <Text style={styles.subtitle}>Tu {product} ya se está preparando.</Text>
             <Pressable style={styles.button} onPress={() => router.dismissAll()}>
                 <Text style={styles.buttonText}>Volver al menú.</Text>
