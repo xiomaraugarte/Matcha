@@ -24,7 +24,14 @@ export const products = [
         id: '4',
         name: 'Té para pelotudos',
         price: 26,
-        description: 'Té de jazmín con leche y perlas de tapioca.',
-        image: require('../../assets/images/jasmine-tea.png'),
+        description: 'Café con leche de coco y perlas de tapioca.',
+        image: require('../../assets/images/Latte-Iced.png'),
+    },
+    {
+        id: '5',
+        name: 'Té para re mil re PELOTUDOS',
+        price: 26,
+        description: 'Capuccino con leche de coco y perlas de tapioca.',
+        image: require('../../assets/images/Capuchino-Iced.png'),
     },
 ];
