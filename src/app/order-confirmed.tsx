@@ -25,6 +25,7 @@ export default function OrderConfirmed() {
             </Animated.View>
             <Text style={styles.title}>¡Pedido listo, {name}!.</Text>
             <NotifyCard />
+            <NotifyCard />
             <Text style={styles.subtitle}>Tu {product} ya se está preparando.</Text>
             <Pressable style={styles.button} onPress={() => router.dismissAll()}>
                 <Text style={styles.buttonText}>Volver al menú.</Text>

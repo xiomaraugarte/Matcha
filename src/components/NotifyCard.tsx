@@ -6,10 +6,7 @@ import { fonts } from '../constants/fonts';
 import { askNotificationPermission, scheduleOrderReady } from '../notifications/notifications';
 
 type Status = 'idle' | 'scheduled' | 'denied';
-<<<<<<< HEAD
-=======
 
->>>>>>> f040b8a11fdebf7dec1591058c2e51f22ef89cc1
 export default function NotifyCard() {
     const [status, setStatus] = useState<Status>('idle');
     const handlePress = async () => {
@@ -21,10 +18,7 @@ export default function NotifyCard() {
         await scheduleOrderReady();
         setStatus('scheduled');
     };
-<<<<<<< HEAD
-=======
 
->>>>>>> f040b8a11fdebf7dec1591058c2e51f22ef89cc1
     if (status === 'scheduled') {
         return (
             <View style={styles.card}>
@@ -33,10 +27,7 @@ export default function NotifyCard() {
             </View>
         );
     }
-<<<<<<< HEAD
-=======
 
->>>>>>> f040b8a11fdebf7dec1591058c2e51f22ef89cc1
     if (status === 'denied') {
         return (
             <View style={styles.card}>
@@ -45,10 +36,7 @@ export default function NotifyCard() {
             </View>
         );
     }
-<<<<<<< HEAD
-=======
 
->>>>>>> f040b8a11fdebf7dec1591058c2e51f22ef89cc1
     return (
         <View style={styles.card}>
             <Ionicons name="notifications-outline" size={24} color={colors.primary} />
@@ -62,10 +50,7 @@ export default function NotifyCard() {
         </View>
     );
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> f040b8a11fdebf7dec1591058c2e51f22ef89cc1
 const styles = StyleSheet.create({
     card: {
         flexDirection: 'row',
@@ -85,8 +70,4 @@ const styles = StyleSheet.create({
         backgroundColor: colors.primary,
     },
     buttonText: { fontSize: 14, fontFamily: fonts.h2, color: colors.onPrimary },
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> f040b8a11fdebf7dec1591058c2e51f22ef89cc1
